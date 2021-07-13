@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../logo.svg";
+import logo from "../assets/image/logo.svg";
 import { Button } from "antd";
 import { useRecoilState } from "recoil";
 import countState from "../store/atoms/exampleAtom";

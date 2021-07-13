@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@craco/craco": "^6.2.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -12,10 +13,12 @@
     "@types/react-dom": "^17.0.0",
     "@umijs/hooks": "^1.9.3",
     "antd": "^4.16.1",
+    "craco-less": "^1.18.0",
     "env-cmd": "^10.1.0",
-    "node-sass": "^5.0.0",
+    "i18next": "^20.3.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-i18next": "^11.11.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "recoil": "^0.3.1",
@@ -23,12 +26,12 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start:dev": "env-cmd -f .env.development react-scripts start",
-    "start:prod": "env-cmd -f .env.production  react-scripts start",
-    "build:dev": "env-cmd -f .env.development react-scripts build",
-    "build:prod": "env-cmd -f .env.production react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start:dev": "env-cmd -f .env.development craco start",
+    "start:prod": "env-cmd -f .env.production  craco start",
+    "build:dev": "env-cmd -f .env.development craco build",
+    "build:prod": "env-cmd -f .env.production craco build",
+    "test": "craco test",
+    "eject": "craco eject"
   },
   "eslintConfig": {
     "extends": [

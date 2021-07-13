@@ -1,9 +1,9 @@
 import React from "react";
-import "./App.scss";
-import "antd/dist/antd.css";
+import "./App.less";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { RecoilRoot } from "recoil";
+import withAppConfig from "./hoc/withAppConfig";
 function App() {
   return (
     <RecoilRoot>
@@ -18,4 +18,4 @@ function App() {
   );
 }
 
-export default App;
+export default withAppConfig(App);
